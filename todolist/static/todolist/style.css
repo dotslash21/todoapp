@@ -7,6 +7,7 @@ body {
   padding: 1rem;
 }
 
-.striked-text {
+.task-complete {
   text-decoration: line-through;
+  background-color: #e0e0e0 !important;
 }

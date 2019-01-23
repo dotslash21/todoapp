@@ -65,16 +65,18 @@
           </a>
         </div>
 
-        <ul class="collection">
-          <a class="collection-item striked-text">Alvin</a>
-          <a class="collection-item">Alvin</a>
-          <a class="collection-item striked-text">Alvin</a>
-          <a class="collection-item">Alvin</a>
-        </ul>
+        <!-- Task lists -->
+        <div class="row">
+          <ul class="collection">
+            {% for todolist in todo_items %} {% if todolist.completed %}
+            <a class="collection-item task-complete">{{ todolist.text }}</a>
+            {% else %}
+            <a href="#" class="collection-item">{{ todolist.text }}</a>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
       </div>
     </main>
-
-    <footer></footer>
 
     <!--JavaScript at end of body for optimized loading-->
     <!-- jQuery -->
