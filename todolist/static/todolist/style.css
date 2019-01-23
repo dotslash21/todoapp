@@ -1,0 +1,12 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("./images/background.jpg");
+}
+
+.container {
+  padding: 1rem;
+}
+
+.striked-text {
+  text-decoration: line-through;
+}
